@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
+
+:root {
+    /* Base colors */
+    --light: #dddddd;
+    --medium: #999999;
+    --dark: #333333;
+    --black: #212121;
+
+    /* Accent */
+    --headings: #32729b;
+    --logo-blue: #377fac;
+    --logo-yellow: #e7901e;
+    --logo-red: #bc4428;
+
+    --static: #44ccee;
+    --active: #00ff84;
+
+    --font-main: 'Montserrat', sans-serif;
+
+    /* Transitions */
+    --transition: all 200ms ease-in-out;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--light);
+    color: var(--black);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.container {
+    padding: 1rem;
+}
+
+
+/* ---------- GLOBAL STRUCTURE ---------- */
+a {
+    transition: var(--transition);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 400;
+    color: var(--headings);
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--black);
+}
+
+
+/* Logo */
+.logo {
+    font-size: 4.2em;
+    font-weight: 800;
+}
+
+.blue {
+    color: var(--logo-blue);
+}
+
+.yellow {
+    color: var(--logo-yellow);
+}
+
+.red {
+    color: var(--logo-red);
+}
+
+.logo sup {
+    color: var(--medium);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.slogan {
+    font-size: 1.8em;
+    color: var(--headings);
+    margin-bottom: 1rem;
+}
+
+
+/* Navigation */
+nav {
+    background-color: var(--dark);
+    padding: 0.5rem;
+}
+nav li {
+    padding: 0.5rem;
+}
+
+nav a {
+    color: var(--light);
+}
+
+nav a:hover {
+    color: var(--headings);
+}
+
+
+/* ABOUT SECTION */
+#about {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+#about h2 {
+    padding: 1rem;
+}
+
+#about video {
+    width: 100%;
+    height: auto;
+    border-radius: 0.1rem;
+    display: block;
+}
+
+#about article {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+#about h3 {
+    font-size: 1.6rem;
+    color: var(--headings);
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: var(--black);
+}
+
+
+
+.read-more {
+    align-self: flex-end;
+    font-size: 1rem;
+    color: var(--logo-blue);
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: var(--static);
+}
+
+
+

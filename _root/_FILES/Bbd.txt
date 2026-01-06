@@ -1,0 +1,146 @@
+blibado©
+Vi ved hvor du bor!
+*************************************************************************************************
+GLOBAL NAVIGATION:
+
+Om os
+Locations
+Aktuelt
+SignUp
+
+*************************************************************************************************
+Om os:
+Begyndelsen
+
+BliBaDO begyndte i 2018 da to udviklere var værter for tre rejsende, der ledte efter et sted at bo. Nu har millioner af værter og gæster oprettet en gratis BliBaDo-konto.
+
+Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der millioner af fantastiske steder at besøge.
+
+Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og overføre betalinger.
+
+Læs mere:
+
+*************************************************************************************************
+Locations:
+
+Location One
+Antal Sovepladser:
+Voksne: 2
+Børn: 3
+Faciliteter:
+Vask: Ja
+Reservation:
+Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.
+Pris / Døgn:
+Kr.: 600,-
+Beskrivelse:
+Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon, der vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og den lille havn.
+
+Location Two
+Antal Sovepladser:
+Voksne: 4
+Børn: 4
+Faciliteter:
+Vask: Nej
+Reservation:
+Minimum reservation er 2 nætter.
+Pris / Døgn:
+Kr.: 550,-
+Beskrivelse:
+Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt køkken og to soveværelser.
+
+Location Three
+Antal Sovepladser:
+Voksne: 3
+Børn: 4
+Faciliteter:
+Vask: Nej
+Reservation:
+Minimum reservation er 5 nætter.
+Pris / Døgn:
+Kr.: 650,-
+Beskrivelse:
+62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr. Ti minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en kold drink.
+
+Location Four
+Antal Sovepladser:
+Voksne: 2
+Børn: 3
+Faciliteter:
+Vask: Ja
+Reservation:
+Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.
+Pris / Døgn:
+Kr.: 600,-
+Beskrivelse:
+Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten over den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør.
+
+Location Five
+Antal Sovepladser:
+Voksne: 2
+Børn: 4
+Faciliteter:
+Vask: Ja
+Reservation:
+Minimum reservation er 2 nætter.
+Pris / Døgn:
+Kr.: 550,-
+Beskrivelse:
+Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og to soveværelser.
+
+Location Six
+Antal Sovepladser:
+Voksne: 2
+Børn: 4
+Faciliteter:
+Vask: Nej
+Reservation:
+Minimum reservation er 6 nætter.
+Pris / Døgn:
+Kr.: 950,-
+Beskrivelse:
+LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang til stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere.
+
+*************************************************************************************************
+Aktuelt:
+
+*************************************************************************************************
+Footer:
+
+Din Location
+<Boulevarden 29, 9000 Aalborg "Google Maps">!
+
+Informationer
+Boulevarden 29, 9000 Aalborg
+3344 5566
+info@blibado.dk
+CVR: 5533 66 7788
+
+*************************************************************************************************
+
+
+/* VARIABLES IN HTML: */
+:root {
+    --light: #ddd;
+    --medium: #999;
+    --dark: #333;
+    --black: #212121;
+    --primary: #4ae;
+    --secondary: #ddd;
+    --danger: #d44;
+    --success: #3b833b;
+    --headings: #32729b;
+    /* GLOBAL HEADING */
+    --logo-blue: #377fac;
+    --logo-yellow: #e7901e;
+    --logo-red: #bc4428;
+    /* BUTTONS */
+    --static: #44ccee;
+    --active: #00ff84;
+}
+body{
+    font-family: 'Montserrat', sans-serif; /*"SMOOCH SANS" IS A GOOGLE FONT*/
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--light);
+}
