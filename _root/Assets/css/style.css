@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
 
 :root {
-    /* Base colors */
     --light: #dddddd;
     --medium: #999999;
     --dark: #333333;
     --black: #212121;
 
-    /* Accent */
     --headings: #32729b;
     --logo-blue: #377fac;
     --logo-yellow: #e7901e;
@@ -18,25 +16,26 @@
 
     --font-main: 'Montserrat', sans-serif;
 
-    /* Transitions */
     --transition: all 200ms ease-in-out;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
     font-family: var(--font-main);
     background-color: var(--light);
     color: var(--black);
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
     line-height: 1.5;
     max-width: 100%;
 }
 
 .container {
-    padding: 1rem;
+    padding: 2vw;
 }
 
-
-/* ---------- GLOBAL STRUCTURE ---------- */
 a {
     transition: var(--transition);
 }
@@ -47,18 +46,30 @@ h3,
 h4 {
     font-weight: 400;
     color: var(--headings);
+    line-height: 1.2;
 }
 
-p {
-    font-size: 1.2em;
+h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    padding: 1rem 0;
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2.2vw, 2rem);
+}
+
+p,
+li {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     font-weight: 400;
     color: var(--black);
 }
 
-
-/* Logo */
+/* LOGO */
 .logo {
-    font-size: 4.2em;
+    display: block;
+    width: 100%;
+    font-size: clamp(4rem, 6vw, 6rem);
     font-weight: 800;
 }
 
@@ -76,50 +87,52 @@ p {
 
 .logo sup {
     color: var(--medium);
-    font-size: 2rem;
+    font-size: clamp(2rem, 2vw, 2rem);
     font-weight: 400;
 }
 
 .slogan {
-    font-size: 1.8em;
+    font-size: clamp(2rem, 2vw, 2rem);
     color: var(--headings);
     margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
-
-/* Navigation */
+/* NAVIGATION */
 nav {
     background-color: var(--dark);
     padding: 0.5rem;
 }
+
 nav li {
     padding: 0.5rem;
 }
 
 nav a {
     color: var(--light);
+    font-size: clamp(1rem, 1.3vw, 1.25rem);
 }
-
 nav a:hover {
     color: var(--headings);
 }
 
-
-/* ABOUT SECTION */
-#about {
-    background-color: var(--light);
-    display: flex;
-    flex-direction: column;
+.signup {
+    color: var(--static);
 }
 
-#about h2 {
-    padding: 1rem;
+.signup:hover {
+    color: var(--logo-yellow);
+}
+
+/* ABOUT */
+#about {
+    display: flex;
+    flex-direction: column;
 }
 
 #about video {
     width: 100%;
     height: auto;
-    border-radius: 0.1rem;
     display: block;
 }
 
@@ -129,22 +142,9 @@ nav a:hover {
     gap: 1rem;
 }
 
-
-#about h3 {
-    font-size: 1.6rem;
-    color: var(--headings);
-}
-
-#about p {
-    font-size: 1.2rem;
-    color: var(--black);
-}
-
-
-
 .read-more {
     align-self: flex-end;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1vw, 1rem);
     color: var(--logo-blue);
     text-decoration: underline;
 }
@@ -153,5 +153,328 @@ nav a:hover {
     color: var(--static);
 }
 
+/* LOCATIONS */
+.lokation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.descr {
+    color: var(--headings);
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
 
+/* AKTUELT */
+.big-img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.thumbnails button {
+    opacity: 1;
+    transition: opacity 1s ease 0s;
+}
+
+.thumbnails button:hover {
+    opacity: 0.8;
+}
+
+.thumbnails img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-location h2,
+.footer-info h2 {
+    color: var(--static);
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+
+.footer-location iframe {
+    border: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.footer-info address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.footer-info a {
+    color: var(--static);
+}
+
+.footer-info a:hover {
+    color: var(--logo-yellow);
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контент */
+.modal-content {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 4px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: var(--headings);
+}
+
+/* Кнопка закрытия */
+.close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: #c62828;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Инпуты и стили формы */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.modal-content label {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.modal-content input {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.modal-content button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #64b5f6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #42a5f5;
+}
+
+/* Ошибки */
+.error {
+    font-size: 0.8rem;
+    color: red;
+}
+
+/* ================================== */
+/* TABLET */
+@media (min-width: 768px) {
+    nav .nav-links {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    nav li {
+        padding: 0;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .about-content figure,
+    .about-content article {
+        flex: 1 1 50%;
+    }
+
+    .lokation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+        min-height: 300px;
+        overflow: hidden;
+        background-color: var(--light);
+    }
+
+    .location figure {
+        flex: 1 1 50%;
+        margin: 0;
+        max-width: 50%;
+    }
+
+    .location figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .location-text {
+        flex: 1 1 50%;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .location-text ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .location-text li {
+        margin-bottom: 0.3rem;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: 1vw;
+    }
+
+    .big-img {
+        width: 50%;
+    }
+
+    .big-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .thumbnails {
+        display: grid;
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1vw;
+    }
+
+    .thumbnails img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .thumbnails button {
+        height: 100%;
+    }
+
+    .footer-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .footer-location,
+    .footer-info {
+        flex: 1;
+    }
+
+    .footer-location iframe {
+        height: 100%;
+        min-height: 150px;
+        max-height: 200px;
+    }
+
+    .footer-info address {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+/* ================================== */
+/* DESKTOP */
+@media (min-width: 1024px) {
+    nav .nav-links {
+        justify-content: flex-start;
+        gap: 3rem;
+    }
+
+    .lokation-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .location {
+        flex-direction: column;
+        /* убираем горизонтальную раскладку */
+        min-height: auto;
+        background-color: var(--light);
+    }
+
+    .location figure {
+        max-width: 100%;
+    }
+}

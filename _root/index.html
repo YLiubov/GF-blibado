@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,182 +8,290 @@
     <link rel="stylesheet" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <script src="./Assets/js/script.js" type="module" defer></script>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h1 class="logo"><span class="blue">bli</span><span class="yellow">ba</span><span class="red">do</span><sup>©</sup></h1>
+            <h1 class="logo"><span class="blue">bli</span><span class="yellow">ba</span><span
+                    class="red">do</span><sup>©</sup></h1>
             <p class="slogan">Vi ved hvor du bor!</p>
         </div>
-    <!-- Навигация -->
+        <!-- Навигация -->
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">Om os</a></li>
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#news">Aktuelt</a></li>
-                <li><a href="#signup">SignUp</a></li>
+                <li><a class="signup" href="#signup">SignUp</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
-<!-- Om os -->
+        <!-- Om os -->
         <section id="about">
             <h2>Om os</h2>
 
-            <figure>
-                <video 
-                    src="./Assets/images/Media/pexels-taryn-elliott-9583751 (720p).mp4" 
-                    autoplay 
-                    loop 
-                    muted 
-                    playsinline>
-                </video>
-            </figure>
+            <div class="about-content">
+                <figure>
+                    <video src="./Assets/images/Media/pexels-taryn-elliott-9583751 (720p).mp4" autoplay loop muted
+                        playsinline>
+                    </video>
+                </figure>
 
-            <article>
-                <h3>Baggrunden</h3>
-                <p>
-                    BliBaDO begyndte i 2018 da to udviklere var væerter for tre rejsende, der ledte efter et sted at bo. Nu har millioner af vaerter og gæester oprettet en gratis BliBaDo-konto.
-                </p>
-                <p>
-                    Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der millioner af fantastiske steder at besøge.
-                </p>
-                <p>
-                    Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og overføre betalinger.
-                </p>
-                <a class="read-more" href="#">Læs mere...</a>
-            </article>
+                <article>
+                    <h3>Baggrunden</h3>
+                    <p>
+                        BliBaDO begyndte i 2018 da to udviklere var væerter for tre rejsende, der ledte efter et sted at
+                        bo. Nu har millioner af vaerter og gæester oprettet en gratis BliBaDo-konto.
+                    </p>
+                    <p>
+                        Uanset om det er en forretningsrejse, weekendtur, familieferie, eller et længere ophold, er der
+                        millioner af fantastiske steder at besøge.
+                    </p>
+                    <p>
+                        Vi arbejder med: Bekræftede personlige profiler samt en pålidelig platform til at opkræve og
+                        overføre betalinger.
+                    </p>
+                    <a class="read-more" href="#">Læs mere...</a>
+                </article>
+            </div>
         </section>
-
+        <!-- LOCATIONS -->
         <section id="locations">
             <h2>Locations</h2>
-<!-- LOCATION -->
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-01-01.jpg" alt="Location One">
-                </figure>
-                <section class="location-text">
-                    <h3>Location One</h3>
+            <div class="lokation-list">
+                <!-- lokation 1 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-01-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location One</h2>
                         <ul>
-                            <li><strong>Antal Sovepladser:</strong></li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 2</li>
                             <li>Børn: 3</li>
-                            <li><strong>Faciliteter:</strong></li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Ja</li>
-                            <li><strong>Reservation:</strong></li>
-                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.</li>
-                            <li><strong>Pris / Døgn:</strong> Kr.: 600,-</li>
-                           <li><strong>Beskrivelse:</strong> Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon, der vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over havet og den lille havn.</li>
+                            <li class="descr">Reservation:</li>
+                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om mindre.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 600,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>Lejligheden ligger i en gammel bygning med højt til loftet, masser af lys og en balkon,
+                                der vender lige mod syd, så du kan nyde solopgangen og solnedgangen med udsigt over
+                                havet og den lille havn.</li>
                         </ul>
-                </section>
-            </article>
-
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-02-01.jpg" alt="Location One">
-                </figure>
-                <section class="location-text">
-                    <h3>Location Two</h3>
+                    </section>
+                </article>
+                <!-- lokation 2 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-02-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location Two</h2>
                         <ul>
-                            <li><strong>Antal Sovepladser:</strong></li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 4</li>
                             <li>Børn: 4</li>
-                            <li><strong>Faciliteter:</strong></li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Nej</li>
-                            <li><strong>Reservation:</strong></li>
-                            <li>Minimum reservation er 2 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.</li>
-                            <li><strong>Pris / Døgn:</strong> Kr.: 550,-</li>
-                           <li><strong>Beskrivelse:</strong>Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt køkken og to soveværelser.</li>
+                            <li class="descr">Reservation:</li>
+                            <li>Minimum reservation er 2 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om mindre.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 550,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>Nyd udsigten fra den store balkon i en klassisk møbleret lejlighed. Du har adgang til:
+                                En entre med et toilet (mulighed for bruser), to store værelser eget badeværelse, godt
+                                køkken og to soveværelser.</li>
                         </ul>
-                </section>
-            </article>
-
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-03-01.jpg" alt="Location One">
-                </figure>
-                <section class="location-text">
-                    <h3>Location Three</h3>
+                    </section>
+                </article>
+                <!-- lokation 3 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-03-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location Three</h2>
                         <ul>
-                            <li><strong>Antal Sovepladser:</strong></li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 3</li>
                             <li>Børn: 4</li>
-                            <li><strong>Faciliteter:</strong></li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Nej</li>
-                            <li><strong>Reservation:</strong></li>
+                            <li class="descr">Reservation:</li>
                             <li>Minimum reservation er 5 nætter.</li>
-                            <li><strong>Pris / Døgn:</strong> Kr.: 650,-</li>
-                           <li><strong>Beskrivelse:</strong> 62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra gebyr. Ti minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en balkon med en kold drink.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 650,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>62 kv/m lejlighed med en fantastisk udsigt og privat parkeringsplads mod et ekstra
+                                gebyr. Ti minutters gang til en shoppingmole Fisketorvet. Nyd solrige aftener på en
+                                balkon med en kold drink.</li>
                         </ul>
-                </section>
-            </article>
-
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-04-01.jpg" alt="Location One">
-                </figure>
-                <section class="location-text">
-                    <h3>Location Four</h3>
+                    </section>
+                </article>
+                <!-- lokation 4 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-04-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location Four</h2>
                         <ul>
-                            <li><strong>Antal Sovepladser:</strong></li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 2</li>
                             <li>Børn: 3</li>
-                            <li><strong>Faciliteter:</strong></li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Ja</li>
-                            <li><strong>Reservation:</strong></li>
-                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.</li>
-                            <li><strong>Pris / Døgn:</strong> Kr.: 600,-</li>
-                           <li><strong>Beskrivelse:</strong> Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten over den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en dobbeltdør.</li>
+                            <li class="descr">Reservation:</li>
+                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om mindre.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 600,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>Bygning med højt til loftet, masser af lys og sydvendt balkon, så du kan nyde udsigten
+                                over den idylliske havn. Køkken og spisestue er veludrustet og forbundet med en
+                                dobbeltdør.</li>
                         </ul>
-                </section>
-            </article>
-
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-05-01.jpg" alt="Location One">
-                </figure>
-                <section class="Location Two">
-                    <h3>Location Five</h3>
+                    </section>
+                </article>
+                <!-- lokation 5 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-05-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location Five</h2>
                         <ul>
-                            <li>Antal Sovepladser:</li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 2</li>
                             <li>Børn: 4</li>
-                            <li>Faciliteter:</li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Ja</li>
-                            <li>Reservation:</li>
+                            <li class="descr">Reservation:</li>
                             <li>Minimum reservation er 3 nætter.</li>
-                            <li>Pris / Døgn: Kr.: 550,-</li>
-                           <li>Beskrivelse: Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk møbleret lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt køkken og to soveværelser.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 550,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>Nyd udsigten over København fra den store balkon og slappe af i en rummelig klassisk
+                                møbleret lejlighed. Du har adgang til: En entre med et toilet, to store værelser, godt
+                                køkken og to soveværelser.</li>
                         </ul>
-                </section>
-            </article>
-
-            <article class="location">
-                <figure>
-                    <img src="./Assets/images/GFX/Location-04-01.jpg" alt="Location One">
-                </figure>
-                <section class="location-text">
-                    <h3>Location Six</h3>
+                    </section>
+                </article>
+                <!-- lokation 6 -->
+                <article class="location">
+                    <figure>
+                        <img src="./Assets/images/GFX/Location-06-01.jpg" alt="Location One">
+                    </figure>
+                    <section class="location-text">
+                        <h2>Location Six</h2>
                         <ul>
-                            <li>Antal Sovepladser:</li>
+                            <li class="descr">Antal Sovepladser:</li>
                             <li>Voksne: 2</li>
                             <li>Børn: 4</li>
-                            <li>Faciliteter:</li>
+                            <li class="descr">Faciliteter:</li>
                             <li>Vask: Nej</li>
-                            <li>Reservation:</li>
-                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke om mindre.</li>
-                            <li>Pris / Døgn: Kr.: 950,-</li>
-                           <li>Beskrivelse: LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang til stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere. </li>
+                            <li class="descr">Reservation:</li>
+                            <li>Minimum reservation er 3 nætter for at kunne tilbyde længere ophold. Spørg venligst ikke
+                                om mindre.</li>
+                            <li class="descr">Pris / Døgn:</li>
+                            <li>Kr.: 950,-</li>
+                            <li class="descr">Beskrivelse:</li>
+                            <li>LakeView Cabin er en traditionel træhytte, nyrenoveret i eksotisk stil. Direkte adgang
+                                til stranden, udendørs bruser og sauna. Perfekt til par, livsnydere og naturelskere.
+                            </li>
                         </ul>
-                </section>
-            </article>
+                    </section>
+                </article>
+            </div>
+        </section>
+        <!--  AKTUAELT -->
+        <section id="news">
+            <h2>Aktuelt</h2>
+            <div class="news">
+                <!-- Большая картинка -->
+                <div class="big-img">
+                    <img id="bigNewsImage" src="./Assets/images/GFX/Location-06-01.jpg" alt="News Image 1">
+                </div>
 
-</section>
-
-
+                <!-- Маленькие картинки -->
+                <ul class="thumbnails">
+                    <li><button type="button"><img src="./Assets/images/GFX/Location-06-01.jpg"
+                                alt="News Image 1"></button></li>
+                    <li><button type="button"><img src="./Assets/images/GFX/Location-06-02.jpg"
+                                alt="News Image 2"></button></li>
+                    <li><button type="button"><img src="./Assets/images/GFX/Location-06-03.jpg"
+                                alt="News Image 3"></button></li>
+                    <li><button type="button"><img src="./Assets/images/GFX/Location-06-04.jpg"
+                                alt="News Image 4"></button></li>
+                </ul>
+            </div>
+        </section>
 
     </main>
+    <footer>
+        <div class="footer-grid">
+            <!-- Левая колонка: Карта -->
+            <section class="footer-location">
+                <h2>Din Lokation:</h2>
+                <iframe src="https://www.google.com/maps?q=Boulevarden+29,+9000+Aalborg&output=embed"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+            <!-- Правая колонка: Информация -->
+            <section class="footer-info">
+                <h2>Informationer:</h2>
+                <address>
+                    Boulevarden 29,<br>
+                    9000 Aalborg<br>
+                    <a href="tel:+4533445566">3344 5566</a><br>
+                    <a href="mailto:info@blibado.dk">info@blibado.dk</a><br>
+                    CVR: 5533 66 7788
+                </address>
+            </section>
+        </div>
+    </footer>
+    <!-- МОДАЛЬНОЕ ОКНО -->
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Simpel formValidering</h2>
+    <form id="signupForm" novalidate>
+      <label for="fname">Fornavn:</label>
+      <input type="text" id="fname" name="fname" required>
+      <small class="error" id="fnameError"></small>
+
+      <label for="lname">Efternavn:</label>
+      <input type="text" id="lname" name="lname" required>
+      <small class="error" id="lnameError"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <small class="error" id="passwordError"></small>
+
+      <label for="repeatPassword">Gentag Password:</label>
+      <input type="password" id="repeatPassword" name="repeatPassword" required>
+      <small class="error" id="repeatPasswordError"></small>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
 
 </body>
+
 </html>
